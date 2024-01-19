@@ -41,7 +41,7 @@ st.sidebar.image(image, use_column_width=True) #caption="Description de l'image"
 st.sidebar.title("Menu")
 
 # liste des pages 
-pages = ["Accueil", "My Skin Routine", "Statistiques"]
+pages = ["Accueil", "My Skin Routine"]
 
 #page = st.sidebar.radio("Aller vers la page :", pages)
 page = st.sidebar.radio("", pages)
@@ -49,6 +49,7 @@ page = st.sidebar.radio("", pages)
 
 # Import fichier CSV
 df_soins = pd.read_csv('df_soins.csv')
+
 
 # Remplacement colonne 'categorie' au format int par le format str
 df_soins['categorie'] = df_soins['categorie'].astype(str)
@@ -285,18 +286,4 @@ elif page == pages[1] :
 
 
 
-
-# -----------------------------------------------------------
-# -----------------------------------------------------------
-############################################
-#### menu page statistiques
-############################################
-
-elif page == pages[2] :
-
-    st.markdown(
-    '<h1 id="section_skin routine" style="color: #BD4BFF; text-align: center;">Statistiques</h1>',
-    unsafe_allow_html=True)
-
-    st.markdown("---")
 
