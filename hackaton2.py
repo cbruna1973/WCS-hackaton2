@@ -74,12 +74,13 @@ if page == pages[0]:
     col1, col2 = st.columns(2)
 
     col1.subheader("Contexte")
-    col1.write("Afin d’aider les personnes qui rencontre des difficultés à comprendre les rituels de beauté et les différents produits qui les composent, quand et comment les utiliser et la fréquence.\n" 
-               "Sur votre site vous avez déjà un système de diagnostic personnalisé de la peau du visage et qui propose quelques produits mais ne propose pas des produits en fonction d’un rituel comme par exemple sur l’image.\n"
+    col1.write("Comment l'IA peut-elle améliorer la proposition de valeur dans le domaine de la beauté ?.\n" 
                )
 
     col1.subheader("Notre idée")
-    col1.write("L’utilisateur sélectionne son âge et son type de peau et il lui est proposé des produits pour les différentes étapes du rituel (nettoyage du visage, sérum, soin de jour ou de nuit, soin des yeux, masque, gommage).")
+    col1.write("Nous avons mis au point une application afin de guider les personnes qui rencontrent des difficultés à comprendre les rituels de soin, les différents produits qui les composent, leur utilisation et leur fréquence.\n" 
+               "Nous avons constaté qu'il n'existait ni page web ni application pour téléphone présentant un rituel de soin.\n"
+               "Après selection de l'âge et du type de peau par l'utilisateur, il lui est ensuite proposé une liste de produits par étape du rituel (nettoyage du visage, sérum, soin de jour ou de nuit, soin des yeux, masque, gommage).")
 
     col2.subheader("Rituel Beauté")
     # col2, affiche l'image
