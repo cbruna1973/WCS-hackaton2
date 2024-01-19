@@ -5,14 +5,8 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 # pip install Pillow 
 from PIL import Image # manipuler des images en Python et qui inclut le module Image
-#pip install streamlit-tags
-from streamlit_tags import st_tags
-import os # pour le chemin de stockage des fichiers de travail - en standart dans pandas
 # pip install plotly
 import plotly.express as px # affichage graph plotly
-import csv # enregistre les données du formulaire dans un fichier csv  - en standart dans pandas
-import time # pour datetime dans le formualaire
-from datetime import datetime # pour datetime dans le formualaire
 import re
 import requests
 import time
