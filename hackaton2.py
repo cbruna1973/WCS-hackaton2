@@ -1,17 +1,17 @@
 import streamlit as st 
 import pandas as pd
-import numpy as np
-import seaborn as sns
-import matplotlib.pyplot as plt
+#import numpy as np
+#import seaborn as sns
+#import matplotlib.pyplot as plt
 # pip install Pillow 
-from PIL import Image # manipuler des images en Python et qui inclut le module Image
+#from PIL import Image # manipuler des images en Python et qui inclut le module Image
 # pip install plotly
 #import plotly.express as px # affichage graph plotly
 import plotly.express as px
-import re
-import requests
-import time
-import random
+#import re
+#import requests
+#import time
+#import random
 
 
 
