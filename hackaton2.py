@@ -1,5 +1,6 @@
 import streamlit as st 
 import pandas as pd
+from PIL import Image # manipuler des images en Python et qui inclut le module Image
 # pip install plotly
 #import plotly.express as px # affichage graph plotly
 
