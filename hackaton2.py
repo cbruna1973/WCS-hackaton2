@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 # pip install Pillow 
 from PIL import Image # manipuler des images en Python et qui inclut le module Image
 # pip install plotly
-import plotly.express as px # affichage graph plotly
+#import plotly.express as px # affichage graph plotly
 import re
 import requests
 import time
