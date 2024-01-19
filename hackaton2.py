@@ -147,39 +147,6 @@ elif page == pages[1] :
 ###################################
     st.subheader("My Morning Routine")
 
-    # Vérifier si les valeurs de sélection sont non nulles
-    if selected_age is not None and selected_skin_type is not None:
-        # Filtre en fonction de l'âge et du type de peau pour la routine du matin
-        filtered_data_morning = df_soins[df_soins['age'].str.contains(selected_age, na=False) & df_soins['peau'].str.contains(selected_skin_type, na=False)]
-
-        # Trie en fonction des catégories de 1 à 3 pour la routine du matin
-        sorted_data_morning = filtered_data_morning[filtered_data_morning['categorie'].between('1', '3')].sort_values(by='categorie')
-
-        if not sorted_data_morning.empty:
-            #st.write("Votre routine matinale :")
-
-            # Créer un tableau avec les informations textuelles
-            table_data = {
-                #'Age': sorted_data_morning['age'].tolist(),
-                #'Type peau': sorted_data_morning['peau'].tolist(),
-                'Catégorie': sorted_data_morning['categorie_name'].tolist(),
-                'Nom': sorted_data_morning['nom'].tolist(),
-                'Description': sorted_data_morning['description'].tolist(),
-                'Application': sorted_data_morning['application'].tolist(),
-                'Prix': sorted_data_morning['prix'].tolist(),
-                'Lien': sorted_data_morning['lien'].tolist()
-            }
-
-            # Afficher le tableau pour les informations textuelles
-            st.table(pd.DataFrame(table_data))
-
-        else:
-            st.write("Aucun produit trouvé pour les critères sélectionnés.")
-    else:
-        st.write("Les valeurs de sélection ne doivent pas être None.")
-
-
-    st.subheader("My Morning Routine colonne")
 
     # Vérifier si les valeurs de sélection sont non nulles
     if selected_age is not None and selected_skin_type is not None:
@@ -225,40 +192,6 @@ elif page == pages[1] :
 
     st.subheader("My Evening Routine")
 
-    # Vérifier si les valeurs de sélection sont non nulles
-    if selected_age is not None and selected_skin_type is not None:
-        # Filtre en fonction de l'âge et du type de peau pour la routine du soir
-        filtered_data_evening = df_soins[df_soins['age'].str.contains(selected_age, na=False) & df_soins['peau'].str.contains(selected_skin_type, na=False)]
-
-        # Trie en fonction des catégories 1, 2 et 4 pour la routine du soir
-        sorted_data_evening = filtered_data_evening[filtered_data_evening['categorie'].isin(['1', '2', '4'])].sort_values(by='categorie')
-
-        # Informations à afficher pour la routine du soir
-        if not sorted_data_evening.empty:
-            #st.write("Votre routine du soir :")
-
-            # Créer un tableau avec les informations textuelles
-            table_data = {
-                #'Age': sorted_data_evening['age'].tolist(),
-                #'Type peau': sorted_data_evening['peau'].tolist(),
-                'Catégorie': sorted_data_evening['categorie_name'].tolist(),
-                'Nom': sorted_data_evening['nom'].tolist(),
-                'Description': sorted_data_evening['description'].tolist(),
-                'Application': sorted_data_evening['application'].tolist(),
-                'Prix': sorted_data_evening['prix'].tolist(),
-                'Lien': sorted_data_evening['lien'].tolist()
-            }
-
-            # Afficher le tableau pour les informations textuelles
-            st.table(pd.DataFrame(table_data))
-
-        else:
-            st.write("Aucun produit trouvé pour les critères sélectionnés.")
-    else:
-        st.write("Les valeurs de sélection ne doivent pas être None.")
-
-
-    st.subheader("My Evening Routine colonne")
 
     # Vérifier si les valeurs de sélection sont non nulles
     if selected_age is not None and selected_skin_type is not None:
@@ -306,38 +239,6 @@ elif page == pages[1] :
 ###################################
     st.subheader("More")
 
-    # Vérifier si les valeurs de sélection sont non nulles
-    if selected_age is not None and selected_skin_type is not None:
-        # Filtre en fonction de l'âge et du type de peau pour la section 'More'
-        filtered_data_more = df_soins[df_soins['age'].str.contains(selected_age, na=False) & df_soins['peau'].str.contains(selected_skin_type, na=False)]
-
-        # Trie en fonction des catégories 5 à 7 pour la section 'More'
-        sorted_data_more = filtered_data_more[filtered_data_more['categorie'].between('5', '7')].sort_values(by='categorie')
-
-        if not sorted_data_more.empty:
-            #st.write("More :")
-
-            # Créer un tableau avec les informations textuelles
-            table_data = {
-                #'Age': sorted_data_more['age'].tolist(),
-                #'Type peau': sorted_data_more['peau'].tolist(),
-                'Catégorie': sorted_data_more['categorie_name'].tolist(),
-                'Nom': sorted_data_more['nom'].tolist(),
-                'Description': sorted_data_more['description'].tolist(),
-                'Application': sorted_data_more['application'].tolist(),
-                'Prix': sorted_data_more['prix'].tolist(),
-                'Lien': sorted_data_more['lien'].tolist()
-            }
-
-            # Afficher le tableau pour les informations textuelles
-            st.table(pd.DataFrame(table_data))
-        else:
-            st.write("Aucun produit trouvé pour les critères sélectionnés.")
-    else:
-        st.write("Les valeurs de sélection ne doivent pas être None.")
-
-
-    st.subheader("More colonne")
 
     # Vérifier si les valeurs de sélection sont non nulles
     if selected_age is not None and selected_skin_type is not None:
