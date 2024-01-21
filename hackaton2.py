@@ -306,10 +306,12 @@ elif page == pages[2] :
     ##############################################
     # graph 1 - Nombre de produit par catégorie
 
-    df2 = df['categorie_name'].value_counts().reset_index().sort_values(by='categorie_name')
+    #df2 = df['categorie_name'].value_counts().reset_index().sort_values(by='categorie_name')
+    df2 = df['categorie_name'].value_counts().reset_index()
 
     # histogramme
-    fig1 = px.histogram(df2, x='categorie_name', y='count')
+    #fig1 = px.histogram(df2, x='categorie_name', y='count')
+    fig1 = px.histogram(df2, x='index', y='categorie_name')
 
     # titre
     fig1.update_layout(title_text='Nombre de produit par catégorie',
